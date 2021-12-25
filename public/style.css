@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: 'Graduate', cursive;
+}
+a {
+  text-decoration: none;
+  color: #d9d9d9;
+}
+.logo > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo > a > img {
+  min-height: 80px;
+  max-height: 130px;
+  filter: invert(90%);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 20vh;
+  background-color: #242526;
+  font-size: 45px;
+}
+.menu_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.body {
+  height: 70vh;
+}
+.Screen1 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("https://images.unsplash.com/photo-1531027703659-9d95821c2933?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bGluZGl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: default;
+}
+.screen1Wrapper {
+  height: inherit;
+  background-color: rgba(0,0,0,0.5);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+.quote {
+  width: 40vw;
+}
+.quote > i {
+  width: inherit;
+  font-size: 30px;
+  text-align: right;
+}
+.quote_img > img {
+  width: 33vw;
+}
+.Screen2 {
+  height: 100vh;
+}
+.screen2Header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  cursor: default;
+}
+.screen2Cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.screen2Card {
+  height: 70vh;
+  width: 30vw;
+  border: solid 5px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+.screen2Card > img {
+  height: 30vh;
+}
+.screen2CardDecription {
+  width: 29vw;
+  text-align: center;
+  font-size: 30px;
+}
+.screen2Card:hover {
+  height: 73vh;
+  width: 35vw;
+  transition-duration: 0.3s;
+}
+.Screen2Desc {
+  margin-top: 5vh;
+  width: 98vw;
+  font-size: 30px;
+  text-align: center;
+}
+.Screen3 {
+  height: 85vh;
+}
+.Screen3Header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  cursor: default;
+}
+.Screen3Cards {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Screen3Card {
+  height: 55vh;
+  width: 22vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50px;
+  border: 3px solid;
+  transition-duration: 0.3s;
+}
+.Screen3Card:hover {
+  height: 57vh;
+  width: 25vw;
+  transition-duration: 0.3s;
+}
+.Screen3Card > a {
+  color: #000;
+}
+.Screen3Card > a > img {
+  height: 37vh;
+  width: 20vw;
+}
+.Screen3Card > a > h2 {
+  text-align: center;
+}
+.Footer {
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #242526;
+}
+.Column1 {
+  color: #d9d9d9;
+}
+.Column2 > ul > li {
+  text-decoration: none;
+}
+.add_product {
+  height: 10vh;
+}
+.add_product > .heading_add_pr {
+  font-size: 50px;
+}
+#addProduct > input {
+  margin: 1vh;
+}
+#addProduct > select {
+  margin: 1vh;
+}
+.products__item {
+  height: 45vh;
+  width: 20vw;
+  margin: 3vh;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  color: #242526;
+}
+.products__link {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #242526;
+}
+.products__link > a {
+  color: #242526;
+}
+.products__button {
+  text-decoration: none;
+  width: 15vw;
+  color: #242526;
+}
+.details {
+  width: 10vw;
+  text-decoration: none;
+  border: 3px solid;
+  border-radius: 20px;
+}
+.knive_h {
+  color: #242526;
+  text-align: center;
+}
