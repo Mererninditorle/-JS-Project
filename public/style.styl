@@ -4,7 +4,7 @@ body
     font-family 'Graduate', cursive
 a
     text-decoration none
-    color #D9D9D9
+    color #ffffff
 
 .logo > a 
     display flex
@@ -14,7 +14,7 @@ a
 .logo > a > img 
     min-height 80px
     max-height 130px
-    filter invert(90%)
+    filter invert(100%)
 .header 
     display flex
     align-items center
@@ -30,136 +30,181 @@ a
 
 .body
     height 70vh
-
+.body > h1
+    text-align center
 //Screen 1
-    .Screen1
-        height 100vh
-        display flex
-        align-items center
-        justify-content space-around
-        background-image url(https://images.unsplash.com/photo-1531027703659-9d95821c2933?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bGluZGl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80)
-        background-repeat no-repeat
-        background-position center
-        background-size cover
-        cursor default
-    .screen1Wrapper
-        height inherit 
-        background-color rgba(0,0,0,0.5)
-        width 100vw
-        display flex
-        align-items center
-        justify-content space-around
-        color #ffffff
-    .quote 
-        width 40vw
-    .quote > i
-        width inherit
-        font-size 30px
-        text-align right
-    .quote_img > img 
-        width 33vw
+.Screen1
+    height 100vh
+    display flex
+    align-items center
+    justify-content space-around
+    background-image url(scr1.jpeg)
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    cursor default
+.screen1Wrapper
+    height inherit 
+    background-color rgba(0,0,0,0.5)
+    width 100vw
+    display flex
+    align-items center
+    justify-content space-around
+    color #ffffff
+.quote 
+    width 40vw
+.quote > i
+    width inherit
+    font-size 30px
+    text-align right
+.quote_img > img 
+    width 33vw
 // Screen 2
-    .Screen2
-        height 100vh
-    .screen2Header > div
-        display flex
-        align-items center
-        justify-content center
-        height 10vh
-        font-size 40px
-        font-weight 800
-        text-align center
-        cursor default
-    .screen2Cards
-        display flex
-        align-items center
-        justify-content space-around
-    .screen2Card
-        height 70vh
-        width 30vw
-        border solid 5px 
-        border-radius 50px
-        display flex
-        flex-direction column
-        align-items center
-        transition-duration 0.3s
-    .screen2Card > img 
-        height 30vh
-    .screen2CardDecription
-        width 29vw
-        text-align center
-        font-size 30px
-    .screen2Card:hover
-        height 73vh
-        width 35vw
-        transition-duration 0.3s
-    .Screen2Desc
-        margin-top 5vh
-        width 98vw
-        font-size 30px
-        text-align center 
+.Screen2
+    height 100vh
+.screen2Header > div
+    display flex
+    align-items center
+    justify-content center
+    height 10vh
+    font-size 40px
+    font-weight 800
+    text-align center
+    cursor default
+.screen2Cards
+    display flex
+    align-items center
+    justify-content space-around
+.screen2Card
+    height 70vh
+    width 30vw
+    border solid 5px 
+    border-radius 50px
+    display flex
+    flex-direction column
+    align-items center
+    transition-duration 0.3s
+.screen2Card > img 
+    height 30vh
+.screen2CardDecription
+    width 29vw
+    text-align center
+    font-size 30px
+.screen2Card:hover
+    height 73vh
+    width 35vw
+    transition-duration 0.3s
+.Screen2Desc
+    margin-top 5vh
+    width 98vw
+    font-size 30px
+    text-align center 
 //Screen 3
-    .Screen3
-        height 85vh
-        // border-top 5px solid 
-    .Screen3Header > div
-        display flex
-        align-items center
-        justify-content center
-        height 10vh
-        font-size 40px
-        font-weight 800
-        text-align center
-        cursor default
-    .Screen3Cards
-        height 75vh
-        display flex
-        align-items center
-        justify-content space-around
-    .Screen3Card
-        height 55vh
-        width 22vw
-        display flex
-        align-items center
-        justify-content space-around
-        border-radius 50px
-        border 3px solid 
-        transition-duration 0.3s
-    .Screen3Card:hover
-        height 57vh
-        width 25vw
-        transition-duration 0.3s
-    .Screen3Card > a
-        color #000000
-    .Screen3Card > a > img 
-        height 37vh
-        width 20vw
-    .Screen3Card > a > h2
-        text-align center
+.Screen3
+    height 85vh
+.Screen3Header > div
+    display flex
+    align-items center
+    justify-content center
+    height 10vh
+    font-size 40px
+    font-weight 800
+    text-align center
+    cursor default
+.Screen3Cards
+    height 75vh
+    display flex
+    align-items center
+    justify-content space-around
+.Screen3Card
+    height 55vh
+    width 22vw
+    display flex
+    align-items center
+    justify-content space-around
+    border-radius 50px
+    border 3px solid 
+    transition-duration 0.3s
+.Screen3Card:hover
+    height 57vh
+    width 25vw
+    transition-duration 0.3s
+.Screen3Card > a
+    color #000000
+.Screen3Card > a > img 
+    height 37vh
+    width 20vw
+.Screen3Card > a > h2
+    text-align center
 // Footer
-    .Footer
-        height 15vh
-        display flex
-        flex-direction row
-        align-items center
-        justify-content space-around
-        background-color #242526
-    .Column1
-        color #D9D9D9
-    .Column2 > ul > li
-        
-        text-decoration none
+.Footer
+    height 15vh
+    display flex
+    flex-direction row
+    align-items center
+    justify-content space-around
+    background-color #242526
+.Column1
+    color #ffffff
+.Column2 > ul > li 
+    text-decoration none
 // Admin
-    .add_product
-        height 10vh
-    .add_product > .heading_add_pr
-        font-size 50px
-    #addProduct > input 
-        margin 1vh
-    #addProduct > select 
-        margin 1vh
-
-// 
+.add_product
+    height 10vh
+.add_product > h2
+    text-align center
+#addProduct > input 
+    margin 1vh
+#addProduct > select 
+    margin 1vh
+// Input 
+#addProduct
+    display flex
+    justify-content center
+    align-items center
+// Admin table
+.all_products
+    margin-top 2vh
+.all_products > table
+    width 98vw 
+    text-align center
+    border-collapse collapse
+    margin 0 1vw 0 1vw
+.all_products > h2
+    width 98vw 
+    margin 0 1vw 0 1vw
+    text-align center
+table > tbody > tr > th
+    height 4vh
+    border 3px solid black
+table > tbody > tr > td
+    height 4vh
+    border 3px solid black
+// table buttons
+#btn
+    display flex
+    flex-direction column
+    align-items center
+    justify-content space-between
+.btn
+    border 1px solid 
+    border-radius 20px
+    width 5vw
+    margin 2vh
+    cursor pointer
+    transition-duration 0.3s
+.btn:hover
+    background-color #000000
+    color #ffffff
+    border 1px solid #ffffff
+    transition-duration 0.3s
+// Products page
+.products
+    height 56vh
+    width 100vw
+    display flex
+    flex-direction row
+    overflow scroll
 .products__item
     height 45vh
     width 20vw

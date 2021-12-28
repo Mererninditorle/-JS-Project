@@ -4,7 +4,7 @@ block admin
     .body
         h1 Admin page
         .add_product
-            .heading_add_pr Add product
+            h2 Add product
             form#addProduct(method = "POST")
                 select(name = "brand")
                     option(value = "Spyderco") Spyderco
@@ -22,7 +22,7 @@ block admin
                 button(type = "submit") Add product
         .all_products
             h2 All products
-            //- .allproducts 
+            table.allproducts
     script(src = "/js/getProducts.js")
     script(src = "/js/addProduct.js")
     

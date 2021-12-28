@@ -5,7 +5,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #d9d9d9;
+  color: #fff;
 }
 .logo > a {
   display: flex;
@@ -16,7 +16,7 @@ a {
 .logo > a > img {
   min-height: 80px;
   max-height: 130px;
-  filter: invert(90%);
+  filter: invert(100%);
 }
 .header {
   display: flex;
@@ -35,12 +35,15 @@ a {
 .body {
   height: 70vh;
 }
+.body > h1 {
+  text-align: center;
+}
 .Screen1 {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-image: url("https://images.unsplash.com/photo-1531027703659-9d95821c2933?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bGluZGl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+  background-image: url("scr1.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -166,7 +169,7 @@ a {
   background-color: #242526;
 }
 .Column1 {
-  color: #d9d9d9;
+  color: #fff;
 }
 .Column2 > ul > li {
   text-decoration: none;
@@ -174,14 +177,68 @@ a {
 .add_product {
   height: 10vh;
 }
-.add_product > .heading_add_pr {
-  font-size: 50px;
+.add_product > h2 {
+  text-align: center;
 }
 #addProduct > input {
   margin: 1vh;
 }
 #addProduct > select {
   margin: 1vh;
+}
+#addProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all_products {
+  margin-top: 2vh;
+}
+.all_products > table {
+  width: 98vw;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 1vw 0 1vw;
+}
+.all_products > h2 {
+  width: 98vw;
+  margin: 0 1vw 0 1vw;
+  text-align: center;
+}
+table > tbody > tr > th {
+  height: 4vh;
+  border: 3px solid #000;
+}
+table > tbody > tr > td {
+  height: 4vh;
+  border: 3px solid #000;
+}
+#btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  border: 1px solid;
+  border-radius: 20px;
+  width: 5vw;
+  margin: 2vh;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  transition-duration: 0.3s;
+}
+.products {
+  height: 56vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
 }
 .products__item {
   height: 45vh;
