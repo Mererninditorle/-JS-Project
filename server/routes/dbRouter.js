@@ -25,7 +25,7 @@ router.post("/add", (req,res) => {
     });
 });
 
-
+// All knives
 router.get("/products", (req,res) => {
     const client = db();
     client.connect(err => {

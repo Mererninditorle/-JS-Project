@@ -13,11 +13,9 @@ async function deleteProduct(el) {
 (async () => {
     const res = await fetch("/api/products");
     const data = await res.json();
-    // container.innerHTML = JSON.stringify(data.data);
-    // Вывод карточек с продуктами
     if (document.querySelector(".products") != null) {
         data.data.forEach((obj) => {
-            container.innerHTML += `<div class = "products__item" data-key = "${obj.brand}"><img src="${obj.path}" alt="pr_photo" style="height:30vh">${obj.brand} ${obj.model}<br><div class="products__link"><a href="" class = "products__button">${obj.price}</a><br><a href="http://localhost:5453/${obj.brand}/${obj.model}" class="details">Details</a></div>`;
+            container.innerHTML += `<div class = "products__item" data-key = "${obj.brand}"><img src="${obj.path}" alt="pr_photo" style="height:30vh">${obj.brand} ${obj.model}<br><div class="products__link"><div class = "products__button">${obj.price}</div><br><div>Steel: ${obj.steel} (${obj.hardness}HRC)<br><div class="margin-top">Blade Shape: ${obj.blade_shape}</div>`;
         });
     };
 })();
@@ -28,7 +26,7 @@ async function deleteProduct(el) {
     const data = await res.json();
     if (document.querySelector(".products") != null) {
         data.data.forEach((obj) => {
-            container.innerHTML += `<div class = "products__item" data-key = "${obj.brand}"><img src="${obj.path}" alt="pr_photo" style="height:30vh">${obj.brand} ${obj.model}<br><div class="products__link"><a href="" class = "products__button">${obj.price}</a><br><a href="http://localhost:5453/${obj.brand}/${obj.model}" class="details">Details</a></div>`;
+            container.innerHTML += `<div class = "products__item" data-key = "${obj.brand}"><img src="${obj.path}" alt="pr_photo" style="height:30vh">${obj.brand} ${obj.model}<br><div class="products__link"><div class = "products__button">${obj.price}</div><br><div>Steel: ${obj.steel} (${obj.hardness}HRC)<br><div class="margin-top">Blade Shape: ${obj.blade_shape}</div>`;
         });
     };
 })();
@@ -39,7 +37,7 @@ async function deleteProduct(el) {
     const data = await res.json();
     if (document.querySelector(".products") != null) {
         data.data.forEach((obj) => {
-            container.innerHTML += `<div class = "products__item" data-key = "${obj.brand}"><img src="${obj.path}" alt="pr_photo" style="height:30vh">${obj.brand} ${obj.model}<br><div class="products__link"><a href="" class = "products__button">${obj.price}</a><br><a href="http://localhost:5453/${obj.brand}/${obj.model}" class="details">Details</a></div>`;
+            container.innerHTML += `<div class = "products__item" data-key = "${obj.brand}"><img src="${obj.path}" alt="pr_photo" style="height:30vh">${obj.brand} ${obj.model}<br><div class="products__link"><div class = "products__button">${obj.price}</div><br><div>Steel: ${obj.steel} (${obj.hardness}HRC)<br><div class="margin-top">Blade Shape: ${obj.blade_shape}</div>`;
         });
     };
 })();
@@ -50,7 +48,7 @@ async function deleteProduct(el) {
     const data = await res.json();
     if (document.querySelector(".products") != null) {
         data.data.forEach((obj) => {
-            container.innerHTML += `<div class = "products__item" data-key = "${obj.brand}"><img src="${obj.path}" alt="pr_photo" style="height:30vh">${obj.brand} ${obj.model}<br><div class="products__link"><a href="" class = "products__button">${obj.price}</a><br><a href="http://localhost:5453/${obj.brand}/${obj.model}" class="details">Details</a></div>`;
+            container.innerHTML += `<div class = "products__item" data-key = "${obj.brand}"><img src="${obj.path}" alt="pr_photo" style="height:30vh">${obj.brand} ${obj.model}<br><div class="products__link"><div class = "products__button">${obj.price}</div><br><div>Steel: ${obj.steel} (${obj.hardness}HRC)<br><div class="margin-top">Blade Shape: ${obj.blade_shape}</div>`;
         });
     };
 })();
@@ -61,7 +59,7 @@ async function deleteProduct(el) {
     const data = await res.json();
     if (document.querySelector(".products") != null) {
         data.data.forEach((obj) => {
-            container.innerHTML += `<div class = "products__item" data-key = "${obj.brand}"><img src="${obj.path}" alt="pr_photo" style="height:30vh">${obj.brand} ${obj.model}<br><div class="products__link"><a href="" class = "products__button">${obj.price}</a><br><a href="http://localhost:5453/${obj.brand}/${obj.model}" class="details">Details</a></div>`;
+            container.innerHTML += `<div class = "products__item" data-key = "${obj.brand}"><img src="${obj.path}" alt="pr_photo" style="height:30vh">${obj.brand} ${obj.model}<br><div class="products__link"><div class = "products__button">${obj.price}</div><br><div>Steel: ${obj.steel} (${obj.hardness}HRC)<br><div class="margin-top">Blade Shape: ${obj.blade_shape}</div>`;
         });
     };
 })();
